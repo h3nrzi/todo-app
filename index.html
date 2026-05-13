@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>وظیفه‌یار</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="todo-card">
+      <div class="card-header">
+        <div class="header-row">
+          <h1>وظیفه‌یار</h1>
+          <button id="layoutToggleBtn" class="layout-toggle" title="تغییر نما">
+            <span class="toggle-icon">نمای ستونی</span>
+          </button>
+        </div>
+        <div class="stats" id="statsArea">
+          <span id="totalCount">۰ وظیفه</span>
+          <span id="completedCount">۰ انجام شده</span>
+          <span id="pendingCount">۰ باقی‌مانده</span>
+        </div>
+      </div>
+
+      <div class="add-section">
+        <div class="form-row">
+          <input
+            type="text"
+            id="taskInput"
+            class="task-input"
+            placeholder="مثال: گزارش پروژه را آماده کن ..."
+            autocomplete="off"
+          />
+          <button id="addTodoBtn" class="btn-add">➕ افزودن وظیفه</button>
+        </div>
+      </div>
+
+      <div class="todo-list-container">
+        <ul class="todo-list" id="todoList">
+          <!-- Tasks will be dynamically rendered by JavaScript -->
+        </ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
